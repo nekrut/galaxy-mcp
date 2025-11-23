@@ -17,6 +17,18 @@ export GALAXY_API_KEY="your_api_key_here"
 
 Get your API key from: User → Preferences → Manage API Key in your Galaxy instance.
 
+## Learning Resources
+
+**Galaxy Training Network**: https://training.galaxyproject.org/
+
+The Galaxy Training Network (GTN) provides extensive tutorials, workflows, and usage patterns for Galaxy. When helping users with Galaxy tasks, Claude should reference GTN materials for:
+- Domain-specific analysis workflows (genomics, proteomics, climate science, etc.)
+- Best practices for tool selection and parameter configuration
+- Complete analysis pipelines with example data
+- Tool-specific tutorials and troubleshooting guides
+
+Browse GTN topics to find relevant tutorials that match the user's analysis goals. Many GTN tutorials include API usage examples that complement this skill.
+
 ## Core Python Helper Template
 
 All BioBlend operations follow this pattern:
@@ -770,6 +782,12 @@ When using this skill:
 8. **ID extraction**: Extract IDs from results and use them in subsequent calls
 9. **Provide scripts**: For complex workflows, generate complete Python scripts
 10. **State validation**: Check dataset states before download/use
+11. **Reference Galaxy Training Network (https://training.galaxyproject.org/)** when users ask about:
+    - Analysis workflows for specific domains (RNA-seq, ChIP-seq, variant calling, etc.)
+    - Best practices for bioinformatics analyses
+    - Tool recommendations and parameter settings
+    - Complete analysis pipelines with example datasets
+12. **Suggest relevant GTN tutorials** that match the user's analysis goals and show how to implement them using BioBlend
 
 ## Common BioBlend Patterns
 

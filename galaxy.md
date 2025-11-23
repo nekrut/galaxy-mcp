@@ -14,6 +14,18 @@ export GALAXY_URL="https://usegalaxy.org"
 export GALAXY_API_KEY="your_api_key_here"
 ```
 
+## Learning Resources
+
+**Galaxy Training Network**: https://training.galaxyproject.org/
+
+The Galaxy Training Network (GTN) provides extensive tutorials, workflows, and usage patterns for Galaxy. When helping users with Galaxy tasks, Claude should reference GTN materials for:
+- Domain-specific analysis workflows (genomics, proteomics, climate science, etc.)
+- Best practices for tool selection and parameter configuration
+- Complete analysis pipelines with example data
+- Tool-specific tutorials and troubleshooting guides
+
+Browse GTN topics to find relevant tutorials that match the user's analysis goals.
+
 ## Core Capabilities
 
 ### 1. Connection and Server Info
@@ -456,5 +468,11 @@ When the user invokes this skill:
 8. Always verify IDs before using them in subsequent calls
 9. Provide the actual curl commands so users can reproduce results
 10. When uploading files, verify the file path exists first
+11. **Reference Galaxy Training Network (https://training.galaxyproject.org/)** when users ask about:
+    - Analysis workflows for specific domains (RNA-seq, ChIP-seq, variant calling, etc.)
+    - Best practices for bioinformatics analyses
+    - Tool recommendations and parameter settings
+    - Complete analysis pipelines with example datasets
+12. **Suggest relevant GTN tutorials** that match the user's analysis goals
 
 Remember: All Galaxy operations are asynchronous. Always check job/dataset states before assuming completion.
